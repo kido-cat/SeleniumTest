@@ -6,7 +6,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 // import 
 
-// import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 
 
@@ -17,10 +17,10 @@ public class AppTest {
 
     @Test
     public void test1() {
-
+        ChromeOptions options;
         WebDriverManager.chromedriver().setup();
-
-        driver = new ChromeDriver();
+        options.setBinary(Constants.WebDriverPaths.sChromeBin);
+        driver = new ChromeDriver(options);
 
         driver.get(baseUrl);
 
