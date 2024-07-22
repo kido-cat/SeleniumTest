@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import java.util.concurrent.TimeUnit;
+import org.junit.Test;
 
 public class AppTest
 
@@ -19,16 +19,13 @@ public class AppTest
     public WebDriver driver;
 
     public String baseUrl = "https://www.lambdatest.com/";
-    
+
+    @Test
     public void test2() {
 
         WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
-
-        options.addArguments("--no-sandbox");
-
-        options.addArguments("--disable-dev-shm-usage");
 
         options.addArguments("--headless");
 
