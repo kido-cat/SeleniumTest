@@ -17,10 +17,10 @@ public class AppTest {
 
     @Test
     public void test1() {
-        ChromeOptions options;
+        // ChromeOptions options;
         WebDriverManager.chromedriver().setup();
         // options.setBinary(Constants.WebDriverPaths.sChromeBin);
-        driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
 
         driver.get(baseUrl);
 
