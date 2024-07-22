@@ -19,7 +19,7 @@ public class AppTest {
     public void test1() {
         ChromeOptions options;
         WebDriverManager.chromedriver().setup();
-        options.setBinary(Constants.WebDriverPaths.sChromeBin);
+        // options.setBinary(Constants.WebDriverPaths.sChromeBin);
         driver = new ChromeDriver(options);
 
         driver.get(baseUrl);
