@@ -16,7 +16,7 @@ public class AppTest {
     public String baseUrl = "https://www.lambdatest.com/";
 
     @Test
-    public void test() {
+    public void test1() {
 
         WebDriverManager.chromedriver().setup();
 
