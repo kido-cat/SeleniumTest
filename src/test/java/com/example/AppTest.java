@@ -28,6 +28,10 @@ options.addArguments("--headless");
         driver = new ChromeDriver(options);
 
         driver.get(baseUrl);
+        String expected = "Baeldung";
+    String actual = "Baeldung";
+
+    assertEquals(expected, actual);
 
         driver.close();
     }
