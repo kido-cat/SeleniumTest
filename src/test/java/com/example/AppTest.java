@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.openqa.selenium.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
+import static org.junit.Assert.*;
 // import 
 
 import org.openqa.selenium.chrome.ChromeOptions;
