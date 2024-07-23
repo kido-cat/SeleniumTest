@@ -18,10 +18,14 @@ public class AppTest {
     @Test
     public void test1() {
         // ChromeOptions options;
-        WebDriverManager.chromedriver().driverVersion("116.0.5845.96").setup();
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions options = new ChromeOptions();
+options.addArguments("--no-sandbox");
+options.addArguments("--disable-dev-shm-usage");
+options.addArguments("--headless");
          // System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
         // options.setBinary(Constants.WebDriverPaths.sChromeBin);
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
 
         driver.get(baseUrl);
 
